@@ -21,7 +21,7 @@ public class IngresarPersona extends JFrame {
     private JRadioButton rbtMasculino;
     private JRadioButton rbtFemenino;
     private JRadioButton rbtOtro;
-    private JRadioButton radioButton1;
+    private JRadioButton rbtNoIndicado;
 
     public IngresarPersona() {
 this.setTitle("Ventana Ingresar Persona");
@@ -36,15 +36,21 @@ this.setVisible(true);
                 String codigo =  txtCódigo.getText();
                 String Nombre = txtNombre.getText();
                 String Apellido = txtApellido.getText();
-                String Idioma = cmbIdioma.getSelectedItem().toString();
+                String idioma = cmbIdioma.getSelectedItem().toString();
                 String aceptoTerminos = (chbTerminos.isSelected()== true) ? "Si" : "No";
-
+                String genero = (rbtMasculino.isSelected()) ? "Masculino":
+                                 (rbtFemenino.isSelected()) ? "Femenino":
+                                 (rbtOtro.isSelected()) ? "Otro":
+                                 (rbtNoIndicado.isSelected()) ? "No indicado":"";
 
 
                 String mensaje = "Tus datos son: \n" +
                                  "Código: " + codigo + "\n" +
                                  "Nombre: " + Nombre + "\n" +
-                                 "Apellido: " + Apellido + "\n";
+                                 "Apellido: " + Apellido + "\n" +
+                                 "Idioma: " + idioma + "\n" +
+                                "Genero: " + genero + "\n" +
+                                 "Aceptó terminos: " + aceptoTerminos + "\n";
 
 
 

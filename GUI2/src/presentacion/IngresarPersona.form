@@ -85,6 +85,11 @@
         </constraints>
         <properties>
           <editable value="false"/>
+          <model>
+            <item value="Español"/>
+            <item value="Inglés"/>
+            <item value="Portugués"/>
+          </model>
         </properties>
       </component>
       <component id="7e7ed" class="javax.swing.JCheckBox" binding="chbTerminos">
@@ -127,14 +132,28 @@
           <text value="Otro"/>
         </properties>
       </component>
-      <component id="fe8c2" class="javax.swing.JRadioButton" binding="radioButton1" default-binding="true">
+      <component id="fe8c2" class="javax.swing.JRadioButton" binding="rbtNoIndicado">
         <constraints>
           <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="RadioButton"/>
+          <text value="No indicado"/>
         </properties>
       </component>
     </children>
   </grid>
+  <buttonGroups>
+    <group name="buttonGroup1">
+      <member id="7ce82"/>
+    </group>
+    <group name="buttonGroup2">
+      <member id="d77ab"/>
+    </group>
+    <group name="buttonGroup3">
+      <member id="b7f40"/>
+    </group>
+    <group name="buttonGroup4">
+      <member id="fe8c2"/>
+    </group>
+  </buttonGroups>
 </form>
